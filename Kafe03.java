@@ -19,7 +19,9 @@ public class Kafe03 {
         jmlRoti = input.nextInt();
 
         totalHarga = (jmlKopi * hargaKopi) + (jmlTeh * hargaTeh) + (jmlRoti * hargaRoti);
-        nominalBayar = totalHarga - (diskon * totalHarga);
+        double totalByte = totalHarga;
+        byte hargaByte = (byte) totalByte;
+        nominalBayar = hargaByte - (diskon * hargaByte);
 
         System.out.println("Keanggotaan pelanggan " + keanggotaan);
         System.out.println("Item pembelian " + jmlKopi + " kopi, " + jmlTeh + " teh, " + jmlRoti + " roti ");
